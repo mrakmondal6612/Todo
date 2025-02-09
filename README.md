@@ -1,11 +1,65 @@
-# React + Vite
+# To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, modern **To-Do App** built with **React** and styled using **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## 🛠 Features
+- ✅ Add, edit, and delete tasks
+- 🎨 Beautiful background image support
+- 📱 Responsive design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Installation
 
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/todo-app.git
+cd todo-app
+```
 
-# [Demo](https://todo-ankanbera.vercel.app/)
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
+
+### 3️⃣ Start the development server
+```bash
+npm run dev
+```
+
+## 📂 Project Structure
+```
+📦 todo-app
+ ┣ 📂 src
+ ┃ ┣ 📂 components
+ ┃ ┃ ┗ 📜 Todo.js
+ ┃ ┣ 📂 assets
+ ┃ ┃ ┗ 📜 image.png
+ ┃ ┣ 📜 App.js
+ ┃ ┣ 📜 main.js
+ ┃ ┗ 📜 index.css
+ ┣ 📜 package.json
+ ┣ 📜 tailwind.config.js
+ ┗ 📜 README.md
+```
+
+## 🎨 Using Background Image
+The background image is set dynamically in `App.js`:
+```jsx
+import bgImg from "./assets/image.png";
+
+<div
+  style={{ backgroundImage: `url(${bgImg})` }}
+  className="bg-cover bg-center min-h-screen grid py-4"
+>
+  <Todo />
+</div>
+```
+
+## 🌟 Contributing
+Feel free to fork this repo and submit a pull request. Any contributions are welcome! 🎉
+
+## 📜 License
+This project is open-source and available under the **MIT License**.
+
+---
+Made with ❤️ by [Ajay Mondal](https://github.com/mrakmondal6612)
+
